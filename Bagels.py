@@ -36,7 +36,7 @@ For example, if the secret number was 248 and your guess was 843, the cloues wou
             guess = ''
             #Продолжаем итерации до получения правильной догадки:
             while len(guess) != NUM_DIGITS or  not guess.isdecimal():
-                print('Gouess #{}:'.format(numGuesses))
+                print('Guess #{}:'.format(numGuesses))
                 guess = input('>')
 
             clues = getClues(guess, secretNum)
@@ -64,7 +64,7 @@ def getSecretNum():
     #Берем первый NUM_DIGITS цифр списка для нашего секретного числа:
     secretNum = ''
     for i in range(NUM_DIGITS):
-        secretNum += 1
+        secretNum += str(nubers[i])
         return secretNum
 
 
